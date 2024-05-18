@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(135, 167, 138);
+}
+h1 {
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    text-shadow: 3px 3px 3px black;
+}
+input, button {
+    outline: none;
+}
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    overflow: auto;
+    position: relative;
+}
+table {
+    width: 85%;
+    border-collapse: collapse;
+    top: 0;
+    position: absolute;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.box{
+    background-color: azure;
+    width: 650px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.latitude, .longitude {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+}
+.latitude {
+    border-top-left-radius: 10px;
+}
+.longitude {
+    border-bottom-left-radius: 10px;
+}
+.latitude input, .longitude input{
+    width: 40px;
+}
+span{
+    font-weight: 900;
+    font-size: 20px;
+}
+/* .box2 p{
+    width: 40%;
+    overflow: scroll;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 3px;
+} */
+.opcoes {
+    width: 650px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 8rem;
+    gap: 20px;
+}
+
+.opcoes button{
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    color: beige;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+}
+.opcoes button:hover {
+    transform: scale(1.010);
+}
+#button {
+    background-color: green;
+}
+#buttonApagar {
+    background-color: rgb(255, 0, 0);
+}
+#buttonDownload {
+    background-color: rgb(48, 72, 151);
+}
+#buttonApagarEntrada{
+    background-color: grey;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: azure;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 20px;
+} 

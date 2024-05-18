@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coordenadas para CSV</title>
+</head>
+<body>
+    <h1>COORDENADAS PARA CSV</h1>
+    <div class="box">
+        <div class="latitude">
+            <p>LATITUDE</p>
+            <input type="number" class="l"><span><p>°</p></span>
+            <input type="number" class="l"><span><p>'</p></span>
+            <input type="text" class="l"><span><p>"S</p></span>
+        </div>
+        <div class="longitude">
+            <p>LONGITUDE</p>
+            <input type="number" class="lo"><span><p>°</p></span>
+            <input type="number" class="lo"><span><p>'</p></span>
+            <input type="text" class="lo"><span><p>"W</p></span>
+        </div>
+    </div>
+    <div class="box box2">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Vértice</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="opcoes">
+        <button id="button">Inserir Vértice</button>
+        <button id="buttonApagarEntrada">Apagar Entradas</button>
+        <button id="buttonApagar">Apagar Vértices</button>
+        <button id="buttonDownload">Download CSV</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
