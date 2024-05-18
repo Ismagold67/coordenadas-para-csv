@@ -66,8 +66,8 @@ function contemLetrasOuSimbolos(){
             data.push(coordenada)
             createTable(
                 cont, 
-                textoLatitude.replace(/""|;|\s/g, '').substring(2), 
-                textoLongitude.replace(/""|;|\s/g, '').substring(1)
+                textoLatitude.replace(/""|;|\s|,/g, '').replace(/W/g,'W').substring(2), 
+                textoLongitude.replace(/""|;|\s|,/g, '').replace(/S/g,'S').substring(1)
             )
         } else {
             alert('Preencha os campos vazios!!')
@@ -108,6 +108,7 @@ download.addEventListener('click', () => {
 apagar.addEventListener('click', () => {
     tbody.innerHTML = ''
     coordenadas = 'V;LAT;LONG\n'
+    data = []
     cont = 0
     ls.forEach(l => {
         l.value = ''
